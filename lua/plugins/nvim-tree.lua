@@ -49,7 +49,7 @@ return {
 			},
 		}
 
-		vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeToggle<cr>', { silent = true, noremap = true })
+		vim.api.nvim_set_keymap('n', '<leader>pv', ':NvimTreeToggle<cr>', { silent = true, noremap = true })
 
 	end,
 }
