@@ -22,6 +22,14 @@ return {
                         action = 'Telescope find_files',
                         key = 'f',
                     },
+                    {
+                        icon = '',
+                        icon_hl = '@variable',
+                        desc = 'Themes',
+                        group = 'Label',
+                        action = 'Telescope colorscheme',
+                        key = 't',
+                    },
                 },
             },
     }
