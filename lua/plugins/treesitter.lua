@@ -8,7 +8,7 @@ return {
 		configs.setup({
 			ensure_installed = { 'c', 'lua', 'vim', 'vimdoc'},
 			sync_install = false,
-			highlight = { 
+			highlight = {
 				enable = true,
 				addtional_vim_regex_highlighting = false
 			},
