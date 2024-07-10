@@ -7,32 +7,38 @@ return {
 
     config = function()
         require('dashboard').setup {
-            theme = 'hyper',
+            theme = 'doom',
             config = {
                 week_header = {
                     enable = true,
                 },
-                shortcut = {
-                    { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+                center = {
                     {
                         icon = ' ',
-                        icon_hl = '@variable',
                         desc = 'Files',
-                        group = 'Label',
                         action = 'Telescope find_files',
                         key = 'f',
                     },
                     {
-                        icon = '',
-                        icon_hl = '@variable',
+                        icon = ' ',
                         desc = 'Themes',
-                        group = 'Label',
                         action = 'Telescope colorscheme',
                         key = 't',
                     },
+                    {
+                        icon = ' ',
+                        desc = 'Projects',
+                        action = 'Telescope projects',
+                        key = 'p',
+                    },
+                    {
+                        icon = '󰒲 ',
+                        desc = 'Lazy',
+                        action = 'Lazy',
+                        key = 'l',
+                    },
                 },
             },
-    }
+        }
     end,
-
 }

@@ -24,6 +24,12 @@ return {
                     ["vim.config.lsp.hover.enabled"] = false,
                     ["config.lsp.signature.enabled"] = false,
                 },
+                signature = {
+                    enabled = false,
+                },
+                hover = {
+                    enabled = false,
+                },
             },
             -- you can enable a preset for easier configuration
             presets = {
