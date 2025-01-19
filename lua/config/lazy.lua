@@ -32,4 +32,4 @@ require("lazy").setup({
     checker = { enabled = true },
 })
 
-vim.cmd('colorscheme kanagawa')
+vim.cmd('colorscheme flexoki-dark')

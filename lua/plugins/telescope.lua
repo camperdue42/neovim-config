@@ -4,23 +4,20 @@ return {
 	branch = '0.1.x',
 
 	dependencies = {
-		'nvim-lua/plenary.nvim'
+		'nvim-lua/plenary.nvim',
+        'BurntSushi/ripgrep',
 	},
 
-	config = function()
-		require('telescope').setup({
-            pickers = {
-                colorscheme = {
-                    enable_preview = true
-                }
+    keys = {
+        {'<leader>pf', '<cmd>Telescope find_files<cr>'},
+        {'<C-p>', '<cmd>Telescope git_files<cr>'},
+        {'<C-k>', '<cmd>Telescope live_grep<cr>'},
+    },
+    opts = {
+        pickers = {
+            colorscheme = {
+                enable_preview = true
             }
-        })
-
-		local builtin = require('telescope.builtin')
-		vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
-		vim.keymap.set('n', '<C-p>', builtin.git_files, {})
-		vim.keymap.set('n', '<leader>ps', function()
-				builtin.grep_string({ search = vim.fn.input("Grep > ") })
-		end)
-	end
+        }
+    },
 }
